@@ -1,0 +1,89 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5e0d8b;
+  color: white;
+  padding: 16px 20px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.direita {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.busca input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.button {
+  background-color: white;
+  color: #2c1c3f;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button:hover {
+  background-color: rgb(255, 194, 255);
+}
+
+.texto {
+  display: inline;
+}
+
+.plus {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+
+  .busca {
+    display: none;
+  }
+
+  .texto {
+    display: none;
+  }
+
+  .plus {
+    display: inline;
+    font-size: 25px;
+  }
+}

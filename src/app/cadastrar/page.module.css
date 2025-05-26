@@ -1,0 +1,94 @@
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.botaoCadastrar {
+  background-color: #5e0d8b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botaoCadastrar:hover {
+  background-color: #a736a7;
+}
+
+.botaoVoltar {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: white;
+  color: #5e0d8b;
+  border: 2px solid #5e0d8b;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botaoVoltar:hover {
+  background-color: #a736a7;
+  color: white;
+  border: 2px solid #a736a7;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 80px 0;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 24px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botaoCadastrar,
+  .botaoVoltar {
+    text-align: center;
+  }
+}
